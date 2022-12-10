@@ -1,0 +1,8 @@
+
+calpoly_agile.redirect_controller_redirect:
+  path: '/calpoly_agile/redirect'
+  defaults:
+    _controller: '\Drupal\calpoly_agile\Controller\RedirectController::reklRedirect'
+    _title: 'ReklRedirect'
+  requirements:
+    _permission: 'access content'

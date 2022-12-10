@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains calpoly_agile.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function calpoly_agile_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the calpoly_agile module.
+    case 'help.page.calpoly_agile':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Agile Customizations') . '</p>';
+      return $output;
+
+    default:
+  }
+}
