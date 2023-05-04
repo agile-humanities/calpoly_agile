@@ -1,0 +1,5 @@
+services:
+  http_middleware.calpoly_agile_redirect:
+    class: Drupal\calpoly_agile\Middleware\Redirect
+    tags:
+      - { name: http_middleware }
